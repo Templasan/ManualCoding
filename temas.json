@@ -1,0 +1,477 @@
+{
+  "Fácil": [
+    {
+      "tema": "Arrays (Listas)",
+      "descricao": "Operações básicas de listas (leitura, escrita, inserção/remoção) e a técnica de 'Sliding Window' (Janela Deslizante) para problemas de sub-array/sub-string.",
+      "subcategorias": [
+        "Manipulação Básica",
+        "Janela Deslizante (Tamanho Fixo)",
+        "Prefix Sum"
+      ],
+      "tags": ["Array", "List", "Sliding Window", "Prefix Sum"]
+    },
+    {
+      "tema": "Strings",
+      "descricao": "Operações básicas de strings (slicing, concatenação, mutabilidade vs. imutabilidade) e manipulação de caracteres. Foco na eficiência das operações de string em Python.",
+      "subcategorias": [
+        "Parsing e Tokenização",
+        "Comparação e Palíndromos",
+        "Anagramas"
+      ],
+      "tags": ["String", "Character", "Palindrome"]
+    },
+    {
+      "tema": "Hash Maps / Sets (Dicionários/Conjuntos)",
+      "descricao": "Uso de 'dict' e 'set' para busca, contagem de frequência e mapeamento em tempo médio $O(1)$. Essencial para transformar soluções quadráticas $O(N^2)$ em lineares $O(N)$.",
+      "subcategorias": [
+        "Contagem de Frequência",
+        "Mapeamento de Pares (Two Sum)",
+        "Hash Set para Existência"
+      ],
+      "tags": ["Hash Map", "Set", "Dictionary", "O(1)", "Two Sum"]
+    },
+    {
+      "tema": "Two Pointers (Dois Ponteiros)",
+      "descricao": "Técnica de otimização de espaço $O(1)$ em arrays/linked lists, movendo ponteiros em tandem ou em direção oposta para reduzir a complexidade de tempo para $O(N)$.",
+      "subcategorias": [
+        "Busca em Direções Opostas (Ex: Ordenados)",
+        "Inplace Modification (Ex: Remoção de Duplicatas)",
+        "Fast/Slow Pointer (Detecção de Ciclos)"
+      ],
+      "tags": ["Two Pointers", "O(N)", "Inplace", "Fast/Slow Pointer"]
+    },
+    {
+      "tema": "Linked Lists (Listas Encadeadas)",
+      "descricao": "Manipulação de nós, ponteiros (referências) e gerenciamento de edge cases usando nós 'dummy'. Foco na manipulação de referências de memória.",
+      "subcategorias": [
+        "Inversão (Reversal)",
+        "Remoção de Elementos",
+        "Nó Dummy (Sentinela) para Edge Cases"
+      ],
+      "tags": ["Linked List", "Pointer"]
+    },
+    {
+      "tema": "Stacks (Pilhas)",
+      "descricao": "Estrutura LIFO (Last-In, First-Out), frequentemente implementada via `list` ou `collections.deque` em Python, usada para verificar balanço e simular chamadas de recursão.",
+      "subcategorias": [
+        "Verificação de Parênteses",
+        "Cálculo Pós-fixo",
+        "Ordem de Elementos"
+      ],
+      "tags": ["Stack", "LIFO", "Deque"]
+    },
+    {
+      "tema": "Queues (Filas)",
+      "descricao": "Estrutura FIFO (First-In, First-Out), tipicamente implementada via `collections.deque`, base para travessia BFS e problemas de ordem sequencial.",
+      "subcategorias": [
+        "Simulação de Processos",
+        "BFS em Estruturas Simples",
+        "Circular Queue"
+      ],
+      "tags": ["Queue", "FIFO", "BFS", "Deque"]
+    },
+    {
+      "tema": "Sorting (Ordenação Básica)",
+      "descricao": "Utilização eficiente de algoritmos de ordenação (e.g., Timsort nativo de Python) para estabelecer uma ordem que simplifica o problema.",
+      "subcategorias": [
+        "Custom Sorting",
+        "Agrupamento",
+        "Bucket/Counting Sort (Simples)"
+      ],
+      "tags": ["Sorting", "Timsort", "Custom Key"]
+    },
+    {
+      "tema": "Recursão (Básica)",
+      "descricao": "Definição de caso base e passo recursivo para resolver problemas por decomposição. Foco em recursão direta (não Backtracking).",
+      "subcategorias": [
+        "Cálculos Iterativos/Recursivos",
+        "Travessia de Estruturas Simples",
+        "Memoization (Introdução)"
+      ],
+      "tags": ["Recursion", "Base Case"]
+    },
+    {
+      "tema": "Math & Geometry (Básico)",
+      "descricao": "Problemas que envolvem aritmética simples, logaritmos, powers, e coordenadas básicas (distância, linha reta).",
+      "subcategorias": [
+        "Números Primos e Fatoração (Sieve)",
+        "Geometria 2D Simples",
+        "MDC/MMC Básico"
+      ],
+      "tags": ["Math", "Geometry", "Arithmetic"]
+    },
+    {
+      "tema": "Bit Manipulation (Manipulação de Bits)",
+      "descricao": "Operações lógicas a nível de bit (`AND`, `OR`, `XOR`, `SHIFT`). Essencial para otimizar operações e gerenciar flags em espaço $O(1)$.",
+      "subcategorias": [
+        "Contagem de Bits (Hamming Weight)",
+        "Verificação de Paridade (XOR)",
+        "Set/Unset Bits"
+      ],
+      "tags": ["Bit Manipulation", "Bitwise", "Optimization"]
+    },
+    {
+      "tema": "Janela Deslizante (Variável)",
+      "descricao": "Técnica de Sliding Window onde o tamanho da janela se ajusta dinamicamente para satisfazer uma condição (Ex: Substring mais longa sem repetir).",
+      "subcategorias": [
+        "Minimizar/Maximizar Sub-array",
+        "Condições Múltiplas",
+        "Uso de Hashmap na Janela"
+      ],
+      "tags": ["Sliding Window", "Dynamic Size", "Hash Map"]
+    },
+    {
+      "tema": "Processamento de Stream (Map/Filter/Reduce)",
+      "descricao": "Uso eficiente de funções de ordem superior de Python para processamento de dados em uma única passagem (sem loop explícito).",
+      "subcategorias": [
+        "Uso de `map()` e `filter()`",
+        "Uso de `itertools` para Combinações/Permutações simples"
+      ],
+      "tags": ["Python Built-in", "Stream", "Functional"]
+    }
+  ],
+  "Médio": [
+    {
+      "tema": "Binary Search (Busca Binária)",
+      "descricao": "Algoritmo $O(\\log N)$ para encontrar um alvo em dados ordenados, ou para encontrar limites (min/max) em um array.",
+      "subcategorias": [
+        "Busca em Array Rotacionado",
+        "Encontrar Limites (Upper/Lower Bound)",
+        "Busca no Domínio de Respostas (Minimax)"
+      ],
+      "tags": ["Binary Search", "LogN", "Optimization"]
+    },
+    {
+      "tema": "Trees (Árvores) - Travessia e Propriedades",
+      "descricao": "Foco em Binary Trees (BT) e Binary Search Trees (BST), incluindo a implementação de travessias por profundidade (DFS) e largura (BFS), e validação de propriedades da árvore.",
+      "subcategorias": [
+        "DFS (Inorder, Preorder, Postorder - Iterativo e Recursivo)",
+        "BFS (Level Order)",
+        "Validação e Balanceamento de BST"
+      ],
+      "tags": ["Tree", "Binary Tree", "BST", "DFS", "BFS"]
+    },
+    {
+      "tema": "Graphs (Grafos e Busca)",
+      "descricao": "Representação (lista de adjacência) e aplicação de algoritmos de busca (DFS e BFS) para resolver problemas de conectividade em grafos e matrizes 2D (implícitas).",
+      "subcategorias": [
+        "Representação de Grafos (Adj. List)",
+        "Busca de Componentes Conexos",
+        "Travessia em Matrizes (Grid BFS/DFS)"
+      ],
+      "tags": ["Graph", "DFS", "BFS", "Connectivity", "Matrix"]
+    },
+    {
+      "tema": "Backtracking / Recursão",
+      "descricao": "Técnica de busca exaustiva (DFS com poda) para gerar uma 'coleção de todas' as respostas possíveis, crucial para problemas de combinações e permutações.",
+      "subcategorias": [
+        "Permutações e Combinações (Com/Sem Duplicatas)",
+        "Subsets (Subconjuntos)",
+        "N-Queens / Sudoku (Restrições)"
+      ],
+      "tags": ["Backtracking", "Recursion", "DFS", "Combinatorics"]
+    },
+    {
+      "tema": "Dynamic Programming (DP) - Padrões Iniciais",
+      "descricao": "Introdução à otimização de subproblemas sobrepostos utilizando memoização (top-down) ou tabulação (bottom-up). Essencial para problemas que buscam um valor ótimo.",
+      "subcategorias": [
+        "DP 1D (Ex: House Robber, Climbing Stairs)",
+        "DP 2D (Ex: Path Sum, Unique Paths)",
+        "Knapsack (0/1) e Unbounded simples"
+      ],
+      "tags": ["Dynamic Programming", "Memoization", "Tabulation", "Optimization"]
+    },
+    {
+      "tema": "Heap (Fila de Prioridade)",
+      "descricao": "Uso de `heapq` (Min Heap) em Python para gerenciamento eficiente de prioridades. Fundamental para resolver problemas de 'Top K' e simulações com custos variáveis.",
+      "subcategorias": [
+        "Top K Elementos",
+        "Merge K Sorted Lists",
+        "Mediana de Stream (Two Heaps)"
+      ],
+      "tags": ["Heap", "Priority Queue", "Top K"]
+    },
+    {
+      "tema": "Greedy Algorithms (Gulosos)",
+      "descricao": "Paradigma que se baseia em fazer a escolha localmente ótima, presumindo que essa escolha levará à solução globalmente ótima. Requer prova de correção.",
+      "subcategorias": [
+        "Scheduling (Agendamento)",
+        "Troco (Coin Change) Greedy",
+        "Maximização Local"
+      ],
+      "tags": ["Greedy", "Optimization"]
+    },
+    {
+      "tema": "Intervals (Manipulação de Intervalos)",
+      "descricao": "Problemas que envolvem a manipulação e fusão de coleções de intervalos, exigindo frequentemente pré-ordenação e varredura linear.",
+      "subcategorias": [
+        "Merge Intervals",
+        "Non-overlapping Intervals",
+        "Meeting Rooms (Agendamento)"
+      ],
+      "tags": ["Intervals", "Sorting", "Overlap"]
+    },
+    {
+      "tema": "Trie (Prefix Tree)",
+      "descricao": "Estrutura de dados em forma de árvore para armazenamento eficiente de strings, permitindo buscas de prefixo e correspondência em tempo $O(L)$, onde $L$ é o comprimento da chave.",
+      "subcategorias": [
+        "Busca de Prefixos",
+        "Contagem de Palavras",
+        "Trie com XOR (Para Máximo/Mínimo)"
+      ],
+      "tags": ["Trie", "Prefix Tree", "String"]
+    },
+    {
+      "tema": "Advanced Linked Lists",
+      "descricao": "Problemas complexos envolvendo múltiplas listas, cópia profunda (deep copy) ou manipulação de ponteiros sofisticada.",
+      "subcategorias": [
+        "Inversão de K-Groups",
+        "Cópia de Listas com Ponteiros Aleatórios",
+        "Adicionar/Remover Nós (Complexo)"
+      ],
+      "tags": ["Linked List", "Deep Copy", "Pointer"]
+    },
+    {
+      "tema": "Matrix (Matrizes)",
+      "descricao": "Travessia e manipulação de matrizes, com foco em otimizações de espaço e tempo para estruturas 2D.",
+      "subcategorias": [
+        "Travessia Espiral",
+        "Rotação/Inversão (Inplace)",
+        "Busca Binária em Matrizes Ordenadas"
+      ],
+      "tags": ["Matrix", "Grid", "2D Array", "Inplace"]
+    },
+    {
+      "tema": "Kadane's Algorithm",
+      "descricao": "Técnica específica de DP para encontrar o subarray/sub-sequência contígua com a soma máxima em tempo $O(N)$.",
+      "subcategorias": [
+        "Maximum Subarray (1D)",
+        "Maximum Subarray (2D, com compressão)"
+      ],
+      "tags": ["Kadane", "DP", "Array", "O(N)"]
+    },
+    {
+      "tema": "Divide and Conquer",
+      "descricao": "Paradigma que quebra um problema em subproblemas menores, resolve-os de forma recursiva e combina as soluções (Ex: Merge Sort, Quick Sort).",
+      "subcategorias": [
+        "Merge Sort",
+        "Problemas Geométricos (Closest Pair of Points)",
+        "Contagem de Inversões"
+      ],
+      "tags": ["Divide and Conquer", "Recursion", "Sorting"]
+    },
+    {
+      "tema": "Two Heaps (Duas Heaps)",
+      "descricao": "Uso combinado de uma Max Heap e uma Min Heap para manter a mediana ou outros valores centrais de forma eficiente em um stream de dados.",
+      "subcategorias": [
+        "Mediana em Stream",
+        "K-ésimo Maior/Menor Elemento"
+      ],
+      "tags": ["Heap", "Priority Queue", "Stream"]
+    },
+    {
+      "tema": "Topological Sort",
+      "descricao": "Ordenação linear de vértices em um Grafo Acíclico Direcionado (DAG), usado para agendamento e resolução de dependências.",
+      "subcategorias": [
+        "Detecção de Dependências",
+        "Kahn's Algorithm (BFS-based)",
+        "DFS-based Sort"
+      ],
+      "tags": ["Topological Sort", "DAG", "Kahn's"]
+    },
+    {
+      "tema": "Shortest Path (Não Ponderado)",
+      "descricao": "Cálculo de caminhos mais curtos em grafos sem pesos nas arestas, resolvido eficientemente com BFS.",
+      "subcategorias": [
+        "BFS para Distância Mínima",
+        "Caminhos Mínimos em Matrizes",
+        "Problemas de Múltiplas Fontes"
+      ],
+      "tags": ["Graph", "BFS", "Shortest Path"]
+    },
+    {
+      "tema": "DP em Strings",
+      "descricao": "Aplicações de Programação Dinâmica para comparar, transformar ou encontrar padrões em strings.",
+      "subcategorias": [
+        "Longest Common Subsequence (LCS)",
+        "Edit Distance (Distância de Edição)",
+        "Palindrome DP"
+      ],
+      "tags": ["Dynamic Programming", "String", "LCS"]
+    },
+    {
+      "tema": "Reservoir Sampling",
+      "descricao": "Algoritmo para selecionar aleatoriamente $k$ itens de uma lista de tamanho $N$ desconhecido (stream) em tempo $O(N)$ e com memória $O(k)$.",
+      "subcategorias": [
+        "Seleção Aleatória em Stream",
+        "Probabilidade Uniforme"
+      ],
+      "tags": ["Reservoir Sampling", "Randomization", "Stream"]
+    },
+    {
+      "tema": "Math (Aritmética Avançada)",
+      "descricao": "Propriedades mais profundas de números e operações essenciais para otimizar cálculos.",
+      "subcategorias": [
+        "Logaritmos e Exponenciação Rápida (Modular)",
+        "Conversão de Bases",
+        "Modular Inverse (Inverso Modular) Básico"
+      ],
+      "tags": ["Math", "Modular Arithmetic", "Power"]
+    },
+    {
+      "tema": "AVL/Red-Black Trees (Conceitos)",
+      "descricao": "Compreensão conceitual das árvores de busca binária auto-balanceáveis e suas garantias de tempo $O(\\log N)$ em todas as operações.",
+      "subcategorias": [
+        "Propriedades de Balanceamento",
+        "Rotações de Árvore (Conceitos)"
+      ],
+      "tags": ["Tree", "AVL", "Red Black", "LogN"]
+    },
+    {
+      "tema": "Ternary Search",
+      "descricao": "Algoritmo $O(\\log N)$ usado para encontrar o máximo ou mínimo de uma função unimodal em um intervalo.",
+      "subcategorias": [
+        "Busca em Funções Unimodais",
+        "Otimização de Ponto Crítico"
+      ],
+      "tags": ["Ternary Search", "Optimization", "LogN"]
+    }
+  ],
+  "Difícil": [
+    {
+      "tema": "Advanced Graph - Shortest Path",
+      "descricao": "Algoritmos avançados para grafos ponderados, incluindo detecção de ciclos negativos e cálculo de caminhos em múltiplas arestas.",
+      "subcategorias": [
+        "Dijkstra (com Heap)",
+        "Bellman-Ford (Ciclos Negativos)",
+        "Floyd-Warshall (Todos os Pares)"
+      ],
+      "tags": ["Graph", "Shortest Path", "Dijkstra", "Bellman-Ford"]
+    },
+    {
+      "tema": "Union-Find (DSU) e MST",
+      "descricao": "Estrutura Disjoint Set Union (DSU) para gerenciamento eficiente de conectividade dinâmica $O(\\alpha(N))$. Essencial para algoritmos de Minimum Spanning Tree (MST).",
+      "subcategorias": [
+        "Kruskal's MST",
+        "Conectividade Dinâmica",
+        "Path Compression e Rank/Size Heuristics"
+      ],
+      "tags": ["Union Find", "DSU", "MST", "Kruskal"]
+    },
+    {
+      "tema": "Advanced Design (Estrutura Mista)",
+      "descricao": "Implementação de estruturas complexas que combinam múltiplos DSAs para garantir requisitos de desempenho rigorosos, frequentemente $O(1)$ amortizado.",
+      "subcategorias": [
+        "LRU Cache (Hash Map + Linked List)",
+        "LFU Cache (Múltiplos Hash Maps)",
+        "Design de Estruturas Personalizadas"
+      ],
+      "tags": ["Design", "System Design", "LRU", "LFU", "O(1) Amortized"]
+    },
+    {
+      "tema": "Segment Tree e Fenwick Tree (BIT)",
+      "descricao": "Estruturas de dados de árvore especializadas para consultas e atualizações de intervalo (Range Queries) em tempo $O(\\log N)$.",
+      "subcategorias": [
+        "Range Sum Query (RSQ)",
+        "Point Update",
+        "Range Max/Min Query"
+      ],
+      "tags": ["Segment Tree", "Fenwick Tree", "BIT", "Range Query"]
+    },
+    {
+      "tema": "Monotonic Stack / Queue",
+      "descricao": "Otimização linear $O(N)$ para problemas que de outra forma seriam $O(N^2)$, focada em encontrar o 'próximo elemento maior/menor' de forma eficiente.",
+      "subcategorias": [
+        "Next Greater Element",
+        "Área Máxima em Histograma",
+        "Sliding Window Min/Max (Monotonic Queue)"
+      ],
+      "tags": ["Monotonic Stack", "Monotonic Queue", "Optimization", "O(N)"]
+    },
+    {
+      "tema": "Advanced Dynamic Programming (DP)",
+      "descricao": "Padrões de DP que envolvem estados complexos, Bitmasking, ou otimizações de DP.",
+      "subcategorias": [
+        "DP com Bitmasking (Ex: Traveling Salesman)",
+        "Digit DP (Contagem de Números)",
+        "Interval DP (Ex: Matrix Chain Multiplication)"
+      ],
+      "tags": ["Dynamic Programming", "Bitmasking", "Advanced DP"]
+    },
+    {
+      "tema": "Maximum Flow / Minimum Cut",
+      "descricao": "Algoritmos para encontrar o fluxo máximo em uma rede e suas aplicações no teorema max-flow min-cut.",
+      "subcategorias": [
+        "Ford-Fulkerson",
+        "Edmonds-Karp",
+        "Aplicações em Bipartite Matching"
+      ],
+      "tags": ["Graph", "Max Flow", "Min Cut", "Matching"]
+    },
+    {
+      "tema": "Game Theory (Minimax/Alpha-Beta)",
+      "descricao": "Problemas de jogos de dois jogadores que podem ser resolvidos com busca de árvore e poda Alpha-Beta.",
+      "subcategorias": [
+        "Minimax (Básico)",
+        "Alpha-Beta Pruning (Otimização)",
+        "Jogos Nim/Grundy"
+      ],
+      "tags": ["Game Theory", "Minimax", "Recursion"]
+    },
+    {
+      "tema": "String Matching (Avançado)",
+      "descricao": "Algoritmos eficientes para busca de padrões em strings longas, ultrapassando a complexidade O(N M)$.",
+      "subcategorias": [
+        "KMP (Knuth-Morris-Pratt)",
+        "Rabin-Karp (Hashing)",
+        "Z-Algorithm"
+      ],
+      "tags": ["String", "KMP", "Hashing"]
+    },
+    {
+      "tema": "Convex Hull & Line Sweep",
+      "descricao": "Algoritmos geométricos para encontrar o invólucro convexo de um conjunto de pontos e a técnica de Line Sweep para problemas de intersecção/cobertura.",
+      "subcategorias": [
+        "Jarvis March / Graham Scan (Convex Hull)",
+        "Line Sweep para Intersecções"
+      ],
+      "tags": ["Geometry", "Line Sweep", "Convex Hull"]
+    },
+    {
+      "tema": "Heavy-Light Decomposition (HLD)",
+      "descricao": "Técnica de decomposição de árvores para permitir consultas e atualizações de caminho em tempo $O(\\log^2 N)$, frequentemente usado com Segment Trees.",
+      "subcategorias": [
+        "Path Queries em Árvores",
+        "Decomposição para Otimização de Caminhos"
+      ],
+      "tags": ["Tree", "Advanced Tree", "HLD", "LogN"]
+    },
+    {
+      "tema": "A* Search Algorithm",
+      "descricao": "Algoritmo de busca informada para encontrar o caminho mais curto entre nós, usando uma heurística para guiar a busca e otimizar Dijkstra.",
+      "subcategorias": [
+        "Heurísticas (Manhattan, Euclidiana)",
+        "A* em Matrizes e Grafos Ponderados"
+      ],
+      "tags": ["Graph", "A*", "Shortest Path", "Heuristic"]
+    },
+    {
+      "tema": "Mo's Algorithm",
+      "descricao": "Técnica offline para Range Queries em arrays, otimizando o re-cálculo de queries através de Square Root Decomposition.",
+      "subcategorias": [
+        "Square Root Decomposition",
+        "Queries Offline"
+      ],
+      "tags": ["Mo's Algorithm", "Array", "Range Query"]
+    },
+    {
+      "tema": "Persistent Data Structures",
+      "descricao": "Estruturas de dados que mantêm versões anteriores após modificações. Foco na implementação de Persistent Segment Trees (conceitos).",
+      "subcategorias": [
+        "Persistent Segment Tree",
+        "Versões de Estruturas"
+      ],
+      "tags": ["Data Structure", "Persistent", "Segment Tree"]
+    }
+  ]
+}
