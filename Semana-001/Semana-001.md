@@ -203,6 +203,42 @@ Dica: para cada número `n`, verifique se `target - n` já está no dicionário.
 ---
 
 <details>
+<summary>Exercício 07 — Par Ordenado (Two Pointers)</summary>
+
+**Tema:** Two Pointers  
+**Dificuldade:** Fácil  
+
+### Enunciado
+Crie uma função em Python chamada `par_ordenado` que receba uma lista de números inteiros **ordenada** `nums` e um inteiro `target`.  
+A função deve retornar `True` se existir um par de elementos distintos na lista que some exatamente `target`, ou `False` caso contrário.  
+
+**Exemplo de entrada e saída:**
+```
+
+nums = [1, 2, 4, 5, 7, 11]
+target = 9
+saida = par_ordenado(nums, target)
+print(saida)  # True  (2 + 7)
+
+nums = [1, 3, 5, 6]
+target = 10
+saida = par_ordenado(nums, target)
+print(saida)  # False
+
+```
+
+### Requisitos / Limitações
+Não utilize loops duplos para checar todos os pares (O(N²)).
+
+Use a técnica de **dois ponteiros** para percorrer a lista de forma eficiente (O(N)).
+
+Dica: inicialize um ponteiro no início e outro no fim da lista, e mova-os dependendo da soma atual.
+
+</details>
+
+---
+
+<details>
 <summary>Exercício 08 — Linked List: Inserção e Remoção</summary>
 
 **Tema:** Linked Lists  
